@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إتمام الشراء | فود جروب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span>فود جروب</span>
+                </a>
+
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="categories.html" class="nav-link">التصنيفات</a>
+                    <a href="product.html" class="nav-link">المنتجات</a>
+                    <a href="account.html" class="nav-link">حسابي</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن منتج...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="account.html" class="icon-btn">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Steps -->
+    <div class="section" style="padding: 1.5rem 0; background: var(--white); border-bottom: 1px solid var(--light-color);">
+        <div class="container">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 2rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--gray-color);">
+                    <div style="width: 30px; height: 30px; background: var(--primary-color); color: white; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <span>السلة</span>
+                </div>
+                <div style="width: 50px; height: 2px; background: var(--primary-color);"></div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--primary-color); font-weight: 700;">
+                    <div style="width: 30px; height: 30px; background: var(--primary-color); color: white; border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">2</div>
+                    <span>الدفع</span>
+                </div>
+                <div style="width: 50px; height: 2px; background: var(--gray-lighter);"></div>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--gray-color);">
+                    <div style="width: 30px; height: 30px; background: var(--light-color); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 0.85rem;">3</div>
+                    <span>التأكيد</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Page -->
+    <section class="payment-page">
+        <div class="container">
+            <h1 class="section-title mb-6">إتمام الشراء</h1>
+            
+            <div class="payment-grid">
+                <!-- Payment Form -->
+                <div>
+                    <!-- Shipping Info -->
+                    <div class="payment-form mb-4">
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-color);"></i>
+                            عنوان التوصيل
+                        </h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">الاسم الأول</label>
+                                <input type="text" class="form-input" placeholder="محمد">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">الاسم الأخير</label>
+                                <input type="text" class="form-input" placeholder="الفلاني">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">رقم الجوال</label>
+                            <input type="tel" class="form-input" placeholder="05xxxxxxxx">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">العنوان</label>
+                            <input type="text" class="form-input" placeholder="اسم الشارع، رقم المبنى">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">المدينة</label>
+                                <select class="form-select">
+                                    <option>اختر المدينة</option>
+                                    <option>الرياض</option>
+                                    <option>جدة</option>
+                                    <option>الدمام</option>
+                                    <option>مكة</option>
+                                    <option>المدينة</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">الرمز البريدي</label>
+                                <input type="text" class="form-input" placeholder="xxxxx">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">ملاحظات (اختياري)</label>
+                            <textarea class="form-textarea" placeholder="أي ملاحظات خاصة بالتوصيل..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="payment-form">
+                        <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-credit-card" style="color: var(--primary-color);"></i>
+                            طريقة الدفع
+                        </h3>
+                        
+                        <div class="payment-methods">
+                            <div class="payment-method active">
+                                <i class="fas fa-credit-card" style="color: var(--primary-color);"></i>
+                                <span>بطاقة ائتمان</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-wallet" style="color: var(--secondary-color);"></i>
+                                <span>محفظة إلكترونية</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-money-bill-wave" style="color: var(--success-color);"></i>
+                                <span>الدفع عند الاستلام</span>
+                            </div>
+                        </div>
+
+                        <!-- Credit Card Form -->
+                        <div id="credit-card-form">
+                            <div class="form-group">
+                                <label class="form-label">رقم البطاقة</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-credit-card"></i></span>
+                                    <input type="text" class="form-input" placeholder="xxxx xxxx xxxx xxxx">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">تاريخ الانتهاء</label>
+                                    <input type="text" class="form-input" placeholder="MM/YY">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">CVV</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                        <input type="text" class="form-input" placeholder="xxx">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">الاسم على البطاقة</label>
+                                <input type="text" class="form-input" placeholder="الاسم كما يظهر على البطاقة">
+                            </div>
+                        </div>
+
+                        <!-- Save Card -->
+                        <div class="form-group" style="margin-top: 1.5rem;">
+                            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" style="width: 18px; height: 18px; accent-color: var(--primary-color);">
+                                <span>حفظ البطاقة للدفعات المستقبلية</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="cart-summary">
+                    <h3 class="summary-title">ملخص الطلبية</h3>
+                    
+                    <!-- Order Items -->
+                    <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--light-color);">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--lighter-color); border-radius: var(--radius); display: flex; align-items: center; justify-content: center;">
+                                <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=60&h=60&fit=crop" alt="تفاح" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="font-size: 0.95rem; font-weight: 600;">تفاح أحمر طازج</h4>
+                                <p style="font-size: 0.85rem; color: var(--gray-light);">2 كيلو</p>
+                            </div>
+                            <span style="font-weight: 700;">49.98 ر.س</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--lighter-color); border-radius: var(--radius); display: flex; align-items: center; justify-content: center;">
+                                <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=60&h=60&fit=crop" alt="موز" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="font-size: 0.95rem; font-weight: 600;">موز طازج</h4>
+                                <p style="font-size: 0.85rem; color: var(--gray-light);">1 كيلو</p>
+                            </div>
+                            <span style="font-weight: 700;">18.50 ر.س</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 60px; height: 60px; background: var(--lighter-color); border-radius: var(--radius); display: flex; align-items: center; justify-content: center;">
+                                <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=60&h=60&fit=crop" alt="جبن" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                            </div>
+                            <div style="flex: 1;">
+                                <h4 style="font-size: 0.95rem; font-weight: 600;">جبن شيدر</h4>
+                                <p style="font-size: 0.85rem; color: var(--gray-light);">500 جرام</p>
+                            </div>
+                            <span style="font-weight: 700;">34.99 ر.س</span>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>المجموع الفرعي</span>
+                        <span>103.47 ر.س</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>التوصيل</span>
+                        <span style="color: var(--primary-color);">مجاني</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>الضريبة (15%)</span>
+                        <span>15.52 ر.س</span>
+                    </div>
+                    
+                    <div class="summary-row total">
+                        <span>الإجمالي</span>
+                        <span style="color: var(--primary-color);">118.99 ر.س</span>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-lg w-full" style="margin-top: 1.5rem;" onclick="completeOrder()">
+                        تأكيد الطلب
+                        <i class="fas fa-check-circle"></i>
+                    </button>
+                    
+                    <a href="cart.html" class="btn btn-outline w-full" style="margin-top: 1rem;">
+                        <i class="fas fa-arrow-right"></i>
+                        العودة للسلة
+                    </a>
+                    
+                    <div style="margin-top: 1.5rem; text-align: center;">
+                        <div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-lock" style="color: var(--primary-color);"></i>
+                            <span style="font-size: 0.9rem; font-weight: 600;">دفع آمن 100%</span>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--gray-light);">بياناتك مشفرة ومحمية بأعلى معايير الأمان</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span>فود جروب</span>
+                    </a>
+                    <p>وجهتك المثالية للتسوق الغذائي عبر الإنترنت. نقدم منتجات طازجة وصحية بأسعار مميزة.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="categories.html">التصنيفات</a></li>
+                        <li><a href="product.html">المنتجات</a></li>
+                        <li><a href="account.html">حسابي</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">خدمة العملاء</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 9200XXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@foodgroup.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 فود جروب. جميع الحقوق محفوظة.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function completeOrder() {
+            // Show loading
+            const btn = document.querySelector('.btn-primary.btn-lg');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<div class="spinner" style="width: 20px; height: 20px; border-width: 2px;"></div>';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                showToast('تم تأكيد طلبك بنجاح!', 'success');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 2000);
+            }, 1500);
+        }
+    </script>
+</body>
+</html>

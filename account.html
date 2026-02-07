@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسابي | فود جروب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span>فود جروب</span>
+                </a>
+
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="categories.html" class="nav-link">التصنيفات</a>
+                    <a href="product.html" class="nav-link">المنتجات</a>
+                    <a href="account.html" class="nav-link active">حسابي</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن منتج...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="account.html" class="icon-btn">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Account Page -->
+    <section class="account-page">
+        <div class="container">
+            <div class="account-grid">
+                <!-- Sidebar -->
+                <div class="account-sidebar">
+                    <div class="account-profile">
+                        <div class="profile-avatar">م</div>
+                        <div class="profile-name">محمد أحمد</div>
+                        <div class="profile-email">mohammed@email.com</div>
+                    </div>
+                    <nav class="account-menu">
+                        <a href="#" class="account-menu-item active" data-target="dashboard">
+                            <i class="fas fa-home"></i>
+                            <span>لوحة التحكم</span>
+                        </a>
+                        <a href="#" class="account-menu-item" data-target="orders">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>طلباتي</span>
+                        </a>
+                        <a href="#" class="account-menu-item" data-target="addresses">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>العناوين</span>
+                        </a>
+                        <a href="#" class="account-menu-item" data-target="wishlist">
+                            <i class="fas fa-heart"></i>
+                            <span>المفضلة</span>
+                        </a>
+                        <a href="#" class="account-menu-item" data-target="payments">
+                            <i class="fas fa-credit-card"></i>
+                            <span>طرق الدفع</span>
+                        </a>
+                        <a href="#" class="account-menu-item" data-target="settings">
+                            <i class="fas fa-cog"></i>
+                            <span>الإعدادات</span>
+                        </a>
+                        <a href="index.html" class="account-menu-item" style="color: var(--danger-color);">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>تسجيل الخروج</span>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Content -->
+                <div class="account-content">
+                    <!-- Dashboard Section -->
+                    <div id="dashboard" class="account-section">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">مرحباً، محمد!</h2>
+                        
+                        <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 mb-6">
+                            <div class="card p-4 text-center">
+                                <div class="stat-icon green" style="margin: 0 auto 0.75rem; width: 50px; height: 50px;">
+                                    <i class="fas fa-shopping-bag"></i>
+                                </div>
+                                <h3 style="font-size: 1.5rem; font-weight: 800;">12</h3>
+                                <p style="color: var(--gray-color); font-size: 0.9rem;">طلب منفذ</p>
+                            </div>
+                            <div class="card p-4 text-center">
+                                <div class="stat-icon blue" style="margin: 0 auto 0.75rem; width: 50px; height: 50px;">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3 style="font-size: 1.5rem; font-weight: 800;">2</h3>
+                                <p style="color: var(--gray-color); font-size: 0.9rem;">طلب قيد التنفيذ</p>
+                            </div>
+                            <div class="card p-4 text-center">
+                                <div class="stat-icon orange" style="margin: 0 auto 0.75rem; width: 50px; height: 50px;">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3 style="font-size: 1.5rem; font-weight: 800;">8</h3>
+                                <p style="color: var(--gray-color); font-size: 0.9rem;">منتج في المفضلة</p>
+                            </div>
+                            <div class="card p-4 text-center">
+                                <div class="stat-icon red" style="margin: 0 auto 0.75rem; width: 50px; height: 50px;">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h3 style="font-size: 1.5rem; font-weight: 800;">156</h3>
+                                <p style="color: var(--gray-color); font-size: 0.9rem;">نقطة مكافأة</p>
+                            </div>
+                        </div>
+
+                        <!-- Recent Orders -->
+                        <div class="data-card">
+                            <div class="data-card-header">
+                                <h3 class="data-card-title">آخر الطلبات</h3>
+                                <a href="#" class="btn btn-outline btn-sm" onclick="showSection('orders')">عرض الكل</a>
+                            </div>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>رقم الطلب</th>
+                                        <th>التاريخ</th>
+                                        <th>الإجمالي</th>
+                                        <th>الحالة</th>
+                                        <th>الإجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD-2024-001</td>
+                                        <td>2024-01-15</td>
+                                        <td>156.50 ر.س</td>
+                                        <td><span class="status-badge status-active">تم التوصيل</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-redo"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-2024-002</td>
+                                        <td>2024-01-10</td>
+                                        <td>89.99 ر.س</td>
+                                        <td><span class="status-badge status-active">تم التوصيل</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-redo"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-2024-003</td>
+                                        <td>2024-01-05</td>
+                                        <td>234.00 ر.س</td>
+                                        <td><span class="status-badge status-pending">قيد التنفيذ</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-times"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Orders Section -->
+                    <div id="orders" class="account-section hidden">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">طلباتي</h2>
+                        
+                        <div class="data-card">
+                            <div class="data-card-header">
+                                <h3 class="data-card-title">جميع الطلبات</h3>
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <select class="form-select" style="width: auto;">
+                                        <option>جميع الحالات</option>
+                                        <option>قيد التنفيذ</option>
+                                        <option>تم التوصيل</option>
+                                        <option>ملغي</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>رقم الطلب</th>
+                                        <th>التاريخ</th>
+                                        <th>المنتجات</th>
+                                        <th>الإجمالي</th>
+                                        <th>الحالة</th>
+                                        <th>الإجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#ORD-2024-001</td>
+                                        <td>2024-01-15</td>
+                                        <td>5 منتجات</td>
+                                        <td>156.50 ر.س</td>
+                                        <td><span class="status-badge status-active">تم التوصيل</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn" title="عرض التفاصيل"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn" title="إعادة الطلب"><i class="fas fa-redo"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-2024-002</td>
+                                        <td>2024-01-10</td>
+                                        <td>3 منتجات</td>
+                                        <td>89.99 ر.س</td>
+                                        <td><span class="status-badge status-active">تم التوصيل</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-redo"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-2024-003</td>
+                                        <td>2024-01-05</td>
+                                        <td>7 منتجات</td>
+                                        <td>234.00 ر.س</td>
+                                        <td><span class="status-badge status-pending">قيد التنفيذ</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn delete"><i class="fas fa-times"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-2023-089</td>
+                                        <td>2023-12-28</td>
+                                        <td>4 منتجات</td>
+                                        <td>123.50 ر.س</td>
+                                        <td><span class="status-badge status-active">تم التوصيل</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-redo"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>#ORD-2023-076</td>
+                                        <td>2023-12-15</td>
+                                        <td>2 منتجات</td>
+                                        <td>45.00 ر.س</td>
+                                        <td><span class="status-badge status-inactive">ملغي</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                                <button class="action-btn"><i class="fas fa-redo"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination">
+                                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                                <button class="page-btn active">1</button>
+                                <button class="page-btn">2</button>
+                                <button class="page-btn">3</button>
+                                <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Addresses Section -->
+                    <div id="addresses" class="account-section hidden">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h2 style="font-size: 1.5rem; font-weight: 700;">عناويني</h2>
+                            <button class="btn btn-primary" onclick="showAddAddressModal()">
+                                <i class="fas fa-plus"></i>
+                                إضافة عنوان
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+                            <div class="card p-4" style="border: 2px solid var(--primary-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                    <div>
+                                        <span class="status-badge status-active" style="margin-bottom: 0.5rem; display: inline-block;">الافتراضي</span>
+                                        <h4 style="font-weight: 700;">المنزل</h4>
+                                    </div>
+                                    <div class="table-actions">
+                                        <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <p style="color: var(--gray-color); line-height: 1.8;">
+                                    محمد أحمد<br>
+                                    حي الرياض، شارع الملك فهد<br>
+                                    عمارة 123، شقة 45<br>
+                                    الرياض 12345<br>
+                                    0501234567
+                                </p>
+                            </div>
+                            
+                            <div class="card p-4">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                    <div>
+                                        <h4 style="font-weight: 700;">العمل</h4>
+                                    </div>
+                                    <div class="table-actions">
+                                        <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <p style="color: var(--gray-color); line-height: 1.8;">
+                                    محمد أحمد<br>
+                    حي العليا، طريق العروبة<br>
+                                    برج المملكة، الطابق 20<br>
+                                    الرياض 54321<br>
+                                    0501234567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wishlist Section -->
+                    <div id="wishlist" class="account-section hidden">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">المفضلة</h2>
+                        
+                        <div class="products-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=200&h=150&fit=crop" alt="تفاح">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">تفاح أحمر طازج</h3>
+                                    <div class="product-price">
+                                        <span class="current-price">24.99 ر.س</span>
+                                    </div>
+                                    <button class="add-to-cart btn-sm w-full">
+                                        <i class="fas fa-cart-plus"></i>
+                                        أضف للسلة
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="product-card">
+                                <div class="product-image">
+                                    <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=200&h=150&fit=crop" alt="جبن">
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">جبن شيدر</h3>
+                                    <div class="product-price">
+                                        <span class="current-price">34.99 ر.س</span>
+                                    </div>
+                                    <button class="add-to-cart btn-sm w-full">
+                                        <i class="fas fa-cart-plus"></i>
+                                        أضف للسلة
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payments Section -->
+                    <div id="payments" class="account-section hidden">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h2 style="font-size: 1.5rem; font-weight: 700;">طرق الدفع</h2>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-plus"></i>
+                                إضافة بطاقة
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+                            <div class="card p-4" style="border: 2px solid var(--primary-color);">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <i class="fab fa-cc-visa" style="font-size: 2.5rem; color: #1a1f71;"></i>
+                                        <div>
+                                            <span class="status-badge status-active" style="margin-bottom: 0.25rem; display: inline-block;">افتراضية</span>
+                                            <h4 style="font-weight: 700;">Visa ending in 4242</h4>
+                                            <p style="color: var(--gray-light); font-size: 0.85rem;">تنتهي في 12/25</p>
+                                        </div>
+                                    </div>
+                                    <div class="table-actions">
+                                        <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card p-4">
+                                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <i class="fab fa-cc-mastercard" style="font-size: 2.5rem; color: #eb001b;"></i>
+                                        <div>
+                                            <h4 style="font-weight: 700;">Mastercard ending in 8888</h4>
+                                            <p style="color: var(--gray-light); font-size: 0.85rem;">تنتهي في 08/26</p>
+                                        </div>
+                                    </div>
+                                    <div class="table-actions">
+                                        <button class="action-btn"><i class="fas fa-edit"></i></button>
+                                        <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Settings Section -->
+                    <div id="settings" class="account-section hidden">
+                        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">الإعدادات</h2>
+                        
+                        <div class="payment-form">
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">معلومات الحساب</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">الاسم الأول</label>
+                                    <input type="text" class="form-input" value="محمد">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">الاسم الأخير</label>
+                                    <input type="text" class="form-input" value="أحمد">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">البريد الإلكتروني</label>
+                                <input type="email" class="form-input" value="mohammed@email.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">رقم الجوال</label>
+                                <input type="tel" class="form-input" value="0501234567">
+                            </div>
+                            
+                            <button class="btn btn-primary">حفظ التغييرات</button>
+                        </div>
+                        
+                        <div class="payment-form" style="margin-top: 2rem;">
+                            <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1.5rem;">تغيير كلمة المرور</h3>
+                            
+                            <div class="form-group">
+                                <label class="form-label">كلمة المرور الحالية</label>
+                                <input type="password" class="form-input" placeholder="••••••••">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">كلمة المرور الجديدة</label>
+                                <input type="password" class="form-input" placeholder="••••••••">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">تأكيد كلمة المرور</label>
+                                <input type="password" class="form-input" placeholder="••••••••">
+                            </div>
+                            
+                            <button class="btn btn-primary">تغيير كلمة المرور</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span>فود جروب</span>
+                    </a>
+                    <p>وجهتك المثالية للتسوق الغذائي عبر الإنترنت. نقدم منتجات طازجة وصحية بأسعار مميزة.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="categories.html">التصنيفات</a></li>
+                        <li><a href="product.html">المنتجات</a></li>
+                        <li><a href="account.html">حسابي</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">خدمة العملاء</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 9200XXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@foodgroup.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 فود جروب. جميع الحقوق محفوظة.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.account-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            
+            // Show target section
+            document.getElementById(sectionId).classList.remove('hidden');
+            
+            // Update menu items
+            document.querySelectorAll('.account-menu-item').forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('data-target') === sectionId) {
+                    item.classList.add('active');
+                }
+            });
+        }
+        
+        function showAddAddressModal() {
+            showToast('سيتم فتح نموذج إضافة عنوان', 'info');
+        }
+    </script>
+</body>
+</html>

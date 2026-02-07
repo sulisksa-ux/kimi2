@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فود جروب | متجر المواد الغذائية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span>فود جروب</span>
+                </a>
+
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link active">الرئيسية</a>
+                    <a href="categories.html" class="nav-link">التصنيفات</a>
+                    <a href="product.html" class="nav-link">المنتجات</a>
+                    <a href="account.html" class="nav-link">حسابي</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن منتج...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="account.html" class="icon-btn">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>أطعمة طازجة وصحية لعائلتك</h1>
+                    <p>اكتشف تشكيلتنا الواسعة من المنتجات الغذائية الطازجة والعضوية بأسعار مميزة. توصيل سريع لباب منزلك.</p>
+                    <div class="hero-buttons">
+                        <a href="categories.html" class="hero-btn-primary">تسوق الآن</a>
+                        <a href="product.html" class="hero-btn-secondary">اكتشف المزيد</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&h=400&fit=crop" alt="Fresh groceries">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تصفح حسب التصنيف</h2>
+                <p class="section-subtitle">اختر من مجموعتنا المتنوعة من المنتجات الطازجة</p>
+            </div>
+            <div class="categories-grid">
+                <a href="categories.html" class="category-card">
+                    <div class="category-icon">🍎</div>
+                    <h3 class="category-name">فواكه</h3>
+                    <span class="category-count">45 منتج</span>
+                </a>
+                <a href="categories.html" class="category-card">
+                    <div class="category-icon">🥬</div>
+                    <h3 class="category-name">خضروات</h3>
+                    <span class="category-count">62 منتج</span>
+                </a>
+                <a href="categories.html" class="category-card">
+                    <div class="category-icon">🥛</div>
+                    <h3 class="category-name">ألبان وبيض</h3>
+                    <span class="category-count">38 منتج</span>
+                </a>
+                <a href="categories.html" class="category-card">
+                    <div class="category-icon">🥩</div>
+                    <h3 class="category-name">لحوم</h3>
+                    <span class="category-count">29 منتج</span>
+                </a>
+                <a href="categories.html" class="category-card">
+                    <div class="category-icon">🍞</div>
+                    <h3 class="category-name">مخبوزات</h3>
+                    <span class="category-count">24 منتج</span>
+                </a>
+                <a href="categories.html" class="category-card">
+                    <div class="category-icon">🥤</div>
+                    <h3 class="category-name">مشروبات</h3>
+                    <span class="category-count">51 منتج</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">منتجات مميزة</h2>
+                <p class="section-subtitle">أفضل المنتجات بأسعار لا تُقاوم</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <span class="product-badge badge-sale">خصم 20%</span>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=300&h=200&fit=crop" alt="تفاح أحمر">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">فواكه</span>
+                        <h3 class="product-name">تفاح أحمر طازج</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">24.99 ر.س</span>
+                            <span class="old-price">31.99 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <span class="product-badge badge-new">جديد</span>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300&h=200&fit=crop" alt="موز">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">فواكه</span>
+                        <h3 class="product-name">موز طازج</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(96)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">18.50 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=300&h=200&fit=crop" alt="خس">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">خضروات</span>
+                        <h3 class="product-name">خس أخضر طازج</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(75)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">12.99 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <span class="product-badge badge-sale">خصم 15%</span>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300&h=200&fit=crop" alt="جبن">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ألبان</span>
+                        <h3 class="product-name">جبن شيدر</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(203)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">34.99 ر.س</span>
+                            <span class="old-price">40.99 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bd6565?w=300&h=200&fit=crop" alt="دجاج">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">لحوم</span>
+                        <h3 class="product-name">صدر دجاج طازج</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">45.00 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <span class="product-badge badge-new">جديد</span>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&h=200&fit=crop" alt="خبز">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">مخبوزات</span>
+                        <h3 class="product-name">خبز فرنسي طازج</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">8.99 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553530979-7ee52a2670c4?w=300&h=200&fit=crop" alt="عصير">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">مشروبات</span>
+                        <h3 class="product-name">عصير برتقال طبيعي</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(112)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">15.99 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <span class="product-badge badge-sale">خصم 25%</span>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=300&h=200&fit=crop" alt="عسل">
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">مواد غذائية</span>
+                        <h3 class="product-name">عسل طبيعي</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(267)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">59.99 ر.س</span>
+                            <span class="old-price">79.99 ر.س</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                أضف للسلة
+                            </button>
+                            <button class="wishlist-btn">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">لماذا تختار فود جروب؟</h2>
+                <p class="section-subtitle">نقدم لك أفضل تجربة تسوق للمواد الغذائية</p>
+            </div>
+            <div class="grid grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
+                <div class="card text-center p-6">
+                    <div class="stat-icon green" style="margin: 0 auto 1rem;">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="mb-2">توصيل سريع</h3>
+                    <p class="text-gray">توصيل خلال 24 ساعة لجميع المناطق</p>
+                </div>
+                <div class="card text-center p-6">
+                    <div class="stat-icon blue" style="margin: 0 auto 1rem;">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="mb-2">منتجات طازجة</h3>
+                    <p class="text-gray">نضمن جودة وجودة جميع المنتجات</p>
+                </div>
+                <div class="card text-center p-6">
+                    <div class="stat-icon orange" style="margin: 0 auto 1rem;">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="mb-2">أسعار مميزة</h3>
+                    <p class="text-gray">أفضل الأسعار مع عروض يومية</p>
+                </div>
+                <div class="card text-center p-6">
+                    <div class="stat-icon red" style="margin: 0 auto 1rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="mb-2">دعم 24/7</h3>
+                    <p class="text-gray">فريق دعم جاهز لمساعدتك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="mb-4" style="font-size: 2rem; font-weight: 800;">اشترك في نشرتنا الإخبارية</h2>
+                <p class="mb-6" style="opacity: 0.9;">احصل على أحدث العروض والخصومات مباشرة إلى بريدك الإلكتروني</p>
+                <form class="flex justify-center gap-2" style="max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" class="form-input" style="flex: 1; border: none;">
+                    <button type="submit" class="btn" style="background: var(--dark-color); color: white;">اشترك</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span>فود جروب</span>
+                    </a>
+                    <p>وجهتك المثالية للتسوق الغذائي عبر الإنترنت. نقدم منتجات طازجة وصحية بأسعار مميزة.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="categories.html">التصنيفات</a></li>
+                        <li><a href="product.html">المنتجات</a></li>
+                        <li><a href="account.html">حسابي</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">خدمة العملاء</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 9200XXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@foodgroup.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 فود جروب. جميع الحقوق محفوظة.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

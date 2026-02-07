@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق | فود جروب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span>فود جروب</span>
+                </a>
+
+                <nav class="nav-menu">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="categories.html" class="nav-link">التصنيفات</a>
+                    <a href="product.html" class="nav-link">المنتجات</a>
+                    <a href="account.html" class="nav-link">حسابي</a>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="ابحث عن منتج...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="cart.html" class="icon-btn cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">3</span>
+                    </a>
+                    <a href="account.html" class="icon-btn">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Page -->
+    <section class="cart-page">
+        <div class="container">
+            <h1 class="section-title mb-6">سلة التسوق</h1>
+            
+            <div class="cart-grid">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=100&h=100&fit=crop" alt="تفاح" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                        </div>
+                        <div class="cart-item-info">
+                            <h4>تفاح أحمر طازج</h4>
+                            <p>فواكه | كيلو</p>
+                            <span class="current-price item-price">24.99 ر.س</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <input type="number" value="2" min="1" class="quantity-input">
+                            <button class="increase">+</button>
+                        </div>
+                        <span class="current-price" style="font-weight: 700;">49.98 ر.س</span>
+                        <button class="action-btn delete remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=100&h=100&fit=crop" alt="موز" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                        </div>
+                        <div class="cart-item-info">
+                            <h4>موز طازج</h4>
+                            <p>فواكه | كيلو</p>
+                            <span class="current-price item-price">18.50 ر.س</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="increase">+</button>
+                        </div>
+                        <span class="current-price" style="font-weight: 700;">18.50 ر.س</span>
+                        <button class="action-btn delete remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=100&h=100&fit=crop" alt="جبن" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius);">
+                        </div>
+                        <div class="cart-item-info">
+                            <h4>جبن شيدر</h4>
+                            <p>ألبان | 500 جرام</p>
+                            <span class="current-price item-price">34.99 ر.س</span>
+                        </div>
+                        <div class="quantity-control">
+                            <button class="decrease">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="increase">+</button>
+                        </div>
+                        <span class="current-price" style="font-weight: 700;">34.99 ر.س</span>
+                        <button class="action-btn delete remove-item">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart Actions -->
+                    <div style="padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--light-color);">
+                        <a href="categories.html" class="btn btn-outline">
+                            <i class="fas fa-arrow-right"></i>
+                            مواصلة التسوق
+                        </a>
+                        <button class="btn btn-danger" onclick="clearCart()">
+                            <i class="fas fa-trash"></i>
+                            إفراغ السلة
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3 class="summary-title">ملخص الطلبية</h3>
+                    
+                    <div class="summary-row">
+                        <span>المجموع الفرعي</span>
+                        <span>103.47 ر.س</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>التوصيل</span>
+                        <span style="color: var(--primary-color);">مجاني</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>الخصم</span>
+                        <span style="color: var(--danger-color);">- 0 ر.س</span>
+                    </div>
+                    
+                    <!-- Promo Code -->
+                    <div style="margin: 1.5rem 0; padding: 1rem 0; border-top: 1px solid var(--light-color); border-bottom: 1px solid var(--light-color);">
+                        <label class="form-label">كود الخصم</label>
+                        <div class="input-group">
+                            <input type="text" placeholder="أدخل الكود" class="form-input">
+                            <button class="btn btn-primary" style="border-radius: var(--radius) 0 0 var(--radius);">تطبيق</button>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-row total">
+                        <span>الإجمالي</span>
+                        <span class="cart-total">103.47 ر.س</span>
+                    </div>
+                    
+                    <a href="payment.html" class="btn btn-primary btn-lg w-full" style="margin-top: 1.5rem;">
+                        إتمام الشراء
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    
+                    <div style="margin-top: 1.5rem; text-align: center;">
+                        <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                            <i class="fas fa-lock" style="color: var(--gray-light);"></i>
+                            <span style="font-size: 0.85rem; color: var(--gray-color);">دفع آمن 100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">قد يعجبك أيضاً</h2>
+                <p class="section-subtitle">منتجات إضافية قد تهمك</p>
+            </div>
+            <div class="products-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=200&h=150&fit=crop" alt="خس">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">خس أخضر</h3>
+                        <div class="product-price">
+                            <span class="current-price">12.99 ر.س</span>
+                        </div>
+                        <button class="add-to-cart btn-sm w-full">
+                            <i class="fas fa-cart-plus"></i>
+                            أضف للسلة
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1553530979-7ee52a2670c4?w=200&h=150&fit=crop" alt="عصير">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">عصير برتقال</h3>
+                        <div class="product-price">
+                            <span class="current-price">15.99 ر.س</span>
+                        </div>
+                        <button class="add-to-cart btn-sm w-full">
+                            <i class="fas fa-cart-plus"></i>
+                            أضف للسلة
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=200&h=150&fit=crop" alt="خبز">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">خبز فرنسي</h3>
+                        <div class="product-price">
+                            <span class="current-price">8.99 ر.س</span>
+                        </div>
+                        <button class="add-to-cart btn-sm w-full">
+                            <i class="fas fa-cart-plus"></i>
+                            أضف للسلة
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=200&h=150&fit=crop" alt="عسل">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">عسل طبيعي</h3>
+                        <div class="product-price">
+                            <span class="current-price">59.99 ر.س</span>
+                        </div>
+                        <button class="add-to-cart btn-sm w-full">
+                            <i class="fas fa-cart-plus"></i>
+                            أضف للسلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <span>فود جروب</span>
+                    </a>
+                    <p>وجهتك المثالية للتسوق الغذائي عبر الإنترنت. نقدم منتجات طازجة وصحية بأسعار مميزة.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="categories.html">التصنيفات</a></li>
+                        <li><a href="product.html">المنتجات</a></li>
+                        <li><a href="account.html">حسابي</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">خدمة العملاء</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">تواصل معنا</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الإرجاع</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">تواصل معنا</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> 9200XXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@foodgroup.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 فود جروب. جميع الحقوق محفوظة.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function clearCart() {
+            if (confirm('هل أنت متأكد من إفراغ السلة؟')) {
+                const cartItems = document.querySelector('.cart-items');
+                const items = cartItems.querySelectorAll('.cart-item');
+                items.forEach(item => item.remove());
+                updateCartTotal();
+                showToast('تم إفراغ السلة', 'success');
+            }
+        }
+    </script>
+</body>
+</html>
